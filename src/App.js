@@ -1,25 +1,29 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from "react";
+import logo from "./logo.svg";
+import "./App.css";
+import PopularAnime from "./components/PopularAnime";
+import SeasonalAnime from "./components/SeasonalAnime";
 
+const anime = [
+  {
+    id: 0,
+    title: "Tate no Yuusha no Nariagari",
+    img_src:
+      "https://cdn.discordapp.com/attachments/511245116871278594/548785611314561036/shield.jpg"
+  }
+];
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
+      <div className="Namiko">
+        <header className="Namiko-header">
+          <span className="Namiko-title">namiko - anime tracker</span>
         </header>
+        <div className="Namiko-banner" />
+        <main className="Namiko-content">
+          <PopularAnime />
+          <SeasonalAnime />
+        </main>
       </div>
     );
   }
