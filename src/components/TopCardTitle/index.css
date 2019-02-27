@@ -2,6 +2,12 @@
   color: white;
   font-weight: bold;
   width: 100%;
-  font-size: 2rem;
+  font-size: 1.5vw;
   cursor: default;
+}
+
+@media only screen and (max-width: 800px) {
+  .topCardTitle {
+    font-size: 3vw;
+  }
 }
