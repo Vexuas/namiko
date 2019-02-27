@@ -1,9 +1,10 @@
-.popularAnime-title {
+.seasonalanime {
   display: flex;
   color: white;
   font-size: 2rem;
 }
-.popularAnime-content {
+.seasonalAnime-content {
+  margin-top: 40px;
   display: flex;
   flex-wrap: wrap;
 }

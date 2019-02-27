@@ -1,0 +1,16 @@
+.seasonCard {
+  width: 48%;
+  margin: auto;
+  margin-top: 6px;
+  margin-bottom: 40px;
+  position: relative;
+  box-sizing: border-box;
+}
+.seasonCardImg {
+  width: 100%;
+  height: 100%;
+  transition: transform 0.2s cubic-bezier(0, 0, 0, 1.8);
+}
+.seasonCard:hover > .seasonCardImg {
+  transform: scale(1.018);
+}
